@@ -1,0 +1,363 @@
+:root {
+  --navbar_color: #12192c;
+  --color_5: #0c5df4;
+  --color_4: #0081dc;
+  --darktext: #526484;
+  --button_color: #0c5df4;
+  --backround_fade_color: #0c5df42e;
+  --border-color: #0c5df4c0;
+  --Nav_background_color: #f5f6fa;
+  --Nav_text_color: #272b04;
+  --Nav_icon_color: #101924; /* --------    //////     DARK MODE COLOR      //////    ------- */
+  --dark_grey: #101924;
+  --darkbg: #0d141d;
+  --Black: #0d141d; /* /////     PRIMARY COLORS    ///////////// */
+  --blue: #559bfb;
+  --indigo: #2c3782;
+  --purple: #816bff;
+  --pink: #ff63a5;
+  --red: #e85347;
+  --orange: #ffa353;
+  --yellow: #f4bd0e;
+  --green: #1ee0ac;
+  --teal: #20c997;
+  --cyan: #09c2de;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #6576ff;
+  --secondary: #364a63;
+  --success: #1ee0ac;
+  --info: #09c2de;
+  --warning: #f4bd0e;
+  --danger: #e85347;
+  --dark: #1c2b46;
+  --gray: #8091a7;
+  --light: #e5e9f2;
+  --lighter: #f5f6fa;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1540px;
+  --font-family-sans-serif: "Helvetica_Regular", "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: var(--font-family-sans-serif);
+}
+
+@font-face {
+  font-family: "DM_Sans_Regular";
+  src: url("../fonts/DM_Sans/DMSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DM_Sans_bold";
+  src: url("../fonts/DM_Sans/DMSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../fonts/Metropolis/Metropolis-Bold.otf");
+}
+
+@font-face {
+  font-family: "Metropolis-Regular";
+  src: url("../fonts/Metropolis/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter/static/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/proxima_ssv/proxima_ssv/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proxima_ssv/proxima_ssv/ProximaNovaBold.otf");
+}
+
+@font-face {
+  font-family: "Helvetica_Regular";
+  src: url("../fonts/Helvetica_Font/Helvetica.ttf");
+}
+
+body {
+  font-size: 0.9375rem;
+  overflow-x: hidden;
+  font-family: var(--font-family-sans-serif);
+  transition: all 0.5s cubic-bezier(0.64, 0, 0.25, 1);
+}
+
+.bold_font {
+  font-family: "ProximaNovaBold";
+}
+
+.bold_font_DS {
+  font-family: "ProximaNovaBold";
+}
+
+.letter_spcing_1 {
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 150px;
+  /* image-rendering: -webkit-optimize-contrast; */
+}
+
+.container {
+  box-shadow: 0 0 0px !important;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.login_cnainr {
+  padding: 80px 130px;
+}
+
+p {
+  margin-bottom: 0rem !important;
+}
+
+.input_text {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  color: #3c4d62;
+  background-color: var(--lighter);
+  background-clip: padding-box;
+  border: 1px solid #dbdfea;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: calc(2.625rem + 2px);
+  padding: 0.6875rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  border-radius: 5px;
+}
+
+.input_text:focus {
+  outline: none !important;
+  border: 1px solid var(--color_5);
+}
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.ptag_color_5 {
+  color: var(--color_5);
+}
+.forgot_pass {
+  position: relative;
+  top: 0;
+}
+.forgot_psd {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+ .field-icon {
+  float: right;
+  margin-top: -24px;
+  position: relative;
+  z-index: 2;
+  left: -1rem;
+}
+
+.btn-primary {
+  color: var(--lighter);
+  background-color: var(--button_color);
+  border-color: var(--border-color);
+}
+
+.btn-lg,
+.btn-group-lg > .btn,
+.dual-listbox .btn-group-lg > .dual-listbox__button {
+  padding: 0.6875rem 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  border-radius: 5px;
+}
+
+.btn,
+.dual-listbox .dual-listbox__button {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-block {
+  justify-content: center;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0rem rgb(38 143 255 / 50%);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #004c9e;
+  border-color: #004c9e;
+}
+
+.btn-block + .btn-block {
+  margin-top: 0rem;
+}
+
+a {
+  color: var(--color_5);
+}
+
+/* UNRELATED to tooltips */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background: #ededed;
+}
+
+/* //////////////////       Scrollbar CSS         ///////////////////////// */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#result {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.inherit_width {
+  width: inherit;
+}
+
+.form-control {
+  height: 30px !important;
+  letter-spacing: 1px;
+}
+
+.input-group > .form-control,
+.input-group > .form-control-plaintext,
+.input-group > .custom-select,
+.input-group > .custom-file {
+  font-size: 12px !important;
+}
+
+.nav span {
+  font-style: italic;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  font-size: 14px;
+  color: #eee;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .login_cnainr {
+    padding: 40px 40px;
+  }
+
+  .mobview {
+    display: none;
+  }
+}
+
+.error {
+  padding-left: 0;
+  font-size: 12px;
+  width: 100%;
+  color: red;
+  letter-spacing: 0.8px;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
