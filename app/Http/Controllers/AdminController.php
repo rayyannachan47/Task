@@ -267,6 +267,10 @@ class AdminController extends Controller
 
         $publicPath = 'images/' . $email;
 
+        if (!Storage::disk('public')->exists(public_path('images/'))) {
+            Storage::makeDirectory(public_path('images/'));
+        }
+
         if (!Storage::disk('public')->exists(public_path('images/' . $email))) {
             Storage::makeDirectory(public_path('images/' . $email));
         }
@@ -442,6 +446,10 @@ class AdminController extends Controller
 
                 if (file_exists($filepath)) {
                     unlink($filepath);
+                }
+
+                if (!Storage::disk('public')->exists(public_path('images/'))) {
+                    Storage::makeDirectory(public_path('images/'));
                 }
 
                 if (!Storage::disk('public')->exists(public_path('images/' . $email))) {
