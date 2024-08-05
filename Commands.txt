@@ -1,0 +1,3 @@
+php artisan db:create
+php artisan migrate --path=/database/migrations/2024_08_01_102151_create_tbl_users_table.php
+php artisan migrate --path=/database/migrations/2024_08_01_103447_create_mst_login_audit_reports_table.php
